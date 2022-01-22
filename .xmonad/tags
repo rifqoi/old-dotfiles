@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/thousandv/.xmonad/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+border_width	xmonad.hs	/^border_width = 0$/;"	f
+chosen_font	xmonad.hs	/^chosen_font = "xft:FiraCode Nerd Font:pixelsize=30:antialias=true:hinting=true"$/;"	f
+file_manager	xmonad.hs	/^file_manager = terminal_emulator ++ " -e lf"               $/;"	f
+floats	xmonad.hs	/^floats   = renamed [Replace "><>"]$/;"	f
+focused_w_color	xmonad.hs	/^focused_w_color = "#FFFFFF"                               -- Border color of focused windows$/;"	f
+gap_width	xmonad.hs	/^gap_width i = spacingRaw False (Border i i i i) True (Border i i i i) True$/;"	f
+gap_width'	xmonad.hs	/^gap_width' i = spacingRaw True (Border i i i i) False (Border i i i i) False$/;"	f
+htall	xmonad.hs	/^htall    = renamed [Replace "bstack"]$/;"	f
+main	xmonad.hs	/^main = do$/;"	f
+matrix_client	xmonad.hs	/^matrix_client = "nheko "$/;"	f
+mod_mask	xmonad.hs	/^mod_mask = mod4Mask                                       -- Sets modkey to super\/windows key$/;"	f
+monocle	xmonad.hs	/^monocle  = renamed [Replace "[M]"]$/;"	f
+myClickJustFocuses	xmonad.hs	/^myClickJustFocuses = True$/;"	f
+myDefaultLayout	xmonad.hs	/^myDefaultLayout =    named "tall" tall$/;"	f
+myFocusFollowsMouse	xmonad.hs	/^myFocusFollowsMouse = False$/;"	f
+myKeys	xmonad.hs	/^myKeys =$/;"	f
+myLayoutHook	xmonad.hs	/^myLayoutHook =  screenCornerLayoutHook $ avoidStruts $ mouseResize $ windowArrange $ smartBorder/;"	f
+myManageHook	xmonad.hs	/^myManageHook = composeAll$/;"	f
+myScratchPads	xmonad.hs	/^myScratchPads = [ NS "terminal"  spawnTerm findTerm manageTerm$/;"	f
+myStartupHook	xmonad.hs	/^myStartupHook = do$/;"	f
+myTabTheme	xmonad.hs	/^myTabTheme = def { fontName            = chosen_font$/;"	f
+network_tool	xmonad.hs	/^network_tool = terminal_emulator ++ " -e doas nmtui"$/;"	f
+normal_w_color	xmonad.hs	/^normal_w_color = "#232323"                                -- Border color of normal windows$/;"	f
+power_menu	xmonad.hs	/^power_menu = "powermenu-v"  $/;"	f
+rss_reader	xmonad.hs	/^rss_reader = terminal_emulator ++ " -e newsboat"    $/;"	f
+system_monitor	xmonad.hs	/^system_monitor = terminal_emulator ++ " -e htop"            $/;"	f
+tall	xmonad.hs	/^tall     = renamed [Replace "[]="]$/;"	f
+terminal_emulator	xmonad.hs	/^terminal_emulator = "alacritty"$/;"	f
+text_editor	xmonad.hs	/^text_editor = terminal_emulator ++ " -e nvim "$/;"	f
+web_browser	xmonad.hs	/^web_browser = "firefox-developer-edition "$/;"	f
+windowCount	xmonad.hs	/^windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . w/;"	f
+workspace_names	xmonad.hs	/^workspace_names = clickable . (map xmobarEscape) $ ["\\62532", "\\62532", "\\62532", "\\62532", /;"	f
+xmobarEscape	xmonad.hs	/^xmobarEscape = concatMap doubleLts$/;"	f

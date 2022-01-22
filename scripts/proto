@@ -1,0 +1,1 @@
+wget -nv -O - https://www.reddit.com/r/Terraria/comments/ovl7uv/he_received_the_knowledge_of_the_universe.json | jq -r '.[].data.children[].data."secure_media"."reddit_video"."fallback_url"' | grep -v null | xclip -sel clip

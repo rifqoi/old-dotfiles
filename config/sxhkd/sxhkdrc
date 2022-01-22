@@ -1,0 +1,59 @@
+# xhkd reload its configuration files
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# # pulseaudio controls speaker volume up & down
+{XF86AudioRaiseVolume, XF86AudioLowerVolume}
+    sh ~/scripts/notification/volume.sh {up,down} ; kill -44 $(pidof dwmblocks)
+
+# # pulseaudio controls mute speaker on/off
+XF86AudioMute
+    sh ~/scripts/notification/volume.sh toggle 
+
+# Pause or play media
+XF86AudioPlay
+    playerctl -a play-pause
+
+# pulseaudio mic mute
+super + x
+    sh ~/scripts/notification/mic.sh toggle 
+   #pactl set-source-mute @DEFAULT_SOURCE@ toggle
+  
+# Brightness Control
+XF86MonBrightnessDown
+    sh ~/scripts/notification/brightness.sh down
+XF86MonBrightnessUp
+    sh ~/scripts/notification/brightness.sh up
+
+# Kill Xinit in case something's going wrong
+super + F10
+   pkill xinit || kill -9 -1
+super + alt + a
+  emacs ~/dox/gunadarma/jadwal-kuliah.org
+# Capture full screen
+Print
+    flameshot full -c -p ~/media/pix/ss/
+
+# Capture screen selection
+Print + shift 
+    flameshot gui
+
+# Open file manager / nautilus
+super + e
+  thunar
+  
+super + w
+   brave
+   
+super + d
+   rofi -show drun
+
+super + alt + comma
+  rofi -show emoji -modi emoji
+
+super + ctrl + c
+  rofi -show calc -modi calc
+
+super + v
+  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+

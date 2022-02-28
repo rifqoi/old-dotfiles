@@ -1,9 +1,6 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-# include ~/.cache/wal/colors-kitty.conf
-# include ~/.config/kitty/catpuccin.conf
-include ~/.config/kitty/tokyo-night.conf
+include ~/.cache/wal/colors-kitty.conf
 
-#background #26243c
 #: Fonts {{{
 
 #: kitty has very powerful font management. You can configure
@@ -165,22 +162,18 @@ include ~/.config/kitty/tokyo-night.conf
 #: corresponding to thin, normal, thick, and very thick lines.
 
 #: }}}
-#font_family Iosevka Nerd Font Complete 
-#font_family DroidSansMono Nerd Font
+# font_family Iosevka Nerd Font Complete 
+font_family JetBrainsMono Nerd Font 
 # font_family FiraCode Nerd Font
 # font_family mononoki Nerd Font Mono
 # font_family UbuntuMono Nerd Font
 # font_family DroidSansMono Nerd Font
-font_family JetBrains Mono
 # bold_font Iosevka Bold Nerd Font Complete 
 # italic_font Iosevka Italic Nerd Font Complete 
 # bold_italic_font Iosevka Bold Italic Nerd Font Complete 
 font_size 13
 window_padding_width 10
-hide_window_decorations yes
-#linux_display_server wayland
 symbol_map U+21,U+2b,U+2d,U+2f,U+3c,U+3d,U+3e,U+5c Fira Code Retina Nerd Font Complete
-enable_audio_bell no
 #: Cursor customization {{{
 
 # cursor #cccccc

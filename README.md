@@ -1,1 +1,1 @@
-# rifqoi's shitty dots
+# rifqoi's dots
